@@ -1,28 +1,15 @@
 {
-  "name": "roots/bedrock",
+  "name": "ollietreend/12-factor-wordpress-demo",
   "type": "project",
-  "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "Demo of a WordPress application which follows 12 Factor App principles.",
+  "homepage": "https://github.com/ollietreend/12-factor-wordpress-demo",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Ollie Treend",
+      "email": "ollie@treend.com",
+      "homepage": "https://github.com/ollietreend"
     }
   ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
