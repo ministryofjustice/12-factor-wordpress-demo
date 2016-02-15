@@ -23,12 +23,14 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.4.2",
-    "oscarotero/env": "^1.0"
+    "johnpbloch/wordpress": "4.4.1",
+    "oscarotero/env": "^1.0",
+    "wpackagist-plugin/disable-wordpress-updates": "1.4.7",
+    "wpackagist-plugin/akismet": "3.1.6"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/disable-wordpress-updates"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

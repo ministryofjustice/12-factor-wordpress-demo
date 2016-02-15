@@ -1,4 +1,5 @@
 {
+  "name": "ollietreend/12-factor-wordpress-demo",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6"
