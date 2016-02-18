@@ -19,4 +19,7 @@ gulp --production
 
 # Clean up – remove node packages now that we've compiled our assets
 # This will save ~250MB of disk space!
-rm -R node_modules
+# We won't do this if $1 = "development"
+if [ "$1" != "development" ]; then
+    rm -R node_modules
+fi
