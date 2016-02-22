@@ -1,0 +1,19 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+
+  override:
+    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - ./build/build-docker.sh
+    - mkdir -p ~/docker; docker save "ministryofjustice/12-factor-wordpress-demo" > ~/docker/image.tar
+    - docker history "ministryofjustice/12-factor-wordpress-demo"
+  pre:
+    - mysql -u ubuntu -e "create database wp_publishing_test"
+
+test:
+  override:
+    - bin/circle_test.sh
