@@ -9,4 +9,4 @@ docker -e DB_NAME="wp_publishing_test" -e DB_USER="ubuntu" DB_PASSWORD="" -e DB_
 -e SECURE_AUTH_SALT="(]fE60-d-D]k%:.RkXHTDfD-=XZ%KR 2Wu^ZN|R|Hnd:0oo4}LxYTsZS>od#8{ "
 -e LOGGED_IN_SALT="sy%|)TabZ,|-;046;+Smc>JW~;~5A}Mv(v|.-XJSy.8(VqhY.Iafv_>7yuQHM~f"
 -e NONCE_SALT="5C @XK}%9TKH_U8$(Vu@izg!8305Yq+p~IOlc/x@bFpA9eTTw:>c-y#^PDNOVA}"
--e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY -e AWS_S3_BUCKET=$AWS_S3_BUCKET run "ministryofjustice/12-factor-wordpress-demo" test
+-e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY -e AWS_S3_BUCKET=$AWS_S3_BUCKET run "ministryofjustice/12-factor-wordpress-demo"
