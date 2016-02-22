@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d90253104b2fd78676896208e2e99ee4",
-    "content-hash": "4ae4e2f9891e9229068184ea6eca88b9",
+    "hash": "775abed88e9c7cefcc1884091c999d03",
+    "content-hash": "cd8ced284b8db813aebcca2b361e37d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,6 +189,27 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "ministryofjustice/wp-rewrite-media-to-s3",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3",
+                "reference": "3577fe4ba749b97ece47ef32ccbe4ee7c9a5d299"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Ollie Treend",
+                    "email": "ollie.treend@digital.justice.gov.uk"
+                }
+            ],
+            "description": "A WordPress plugin which rewrites media attachment URLs to S3.",
+            "time": "2016-02-19 16:35:01"
         },
         {
             "name": "oscarotero/env",
