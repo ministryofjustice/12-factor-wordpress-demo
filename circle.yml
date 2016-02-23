@@ -13,7 +13,6 @@ dependencies:
     - docker history "ministryofjustice/12-factor-wordpress-demo"
   pre:
     - mysql -u ubuntu -e "create database wp_publishing_test"
-
 test:
   override:
-    - bin/circle_test.sh
+    - build/circle_test.sh
