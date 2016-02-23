@@ -15,4 +15,4 @@ dependencies:
     - mysql -u ubuntu -e "create database wp_publishing_test"
 test:
   override:
-    - circle_test.sh
+    - ./circle_test.sh
