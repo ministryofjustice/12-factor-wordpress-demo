@@ -8,7 +8,7 @@ dependencies:
 
   override:
     - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
-    - ./build/build-docker.sh
+    - docker build "ministryofjustice/12-factor-wordpress-demo" .
     - mkdir -p ~/docker; docker save "ministryofjustice/12-factor-wordpress-demo" > ~/docker/image.tar
     - docker history "ministryofjustice/12-factor-wordpress-demo"
   pre:
