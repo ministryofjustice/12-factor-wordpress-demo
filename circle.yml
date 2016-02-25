@@ -1,18 +1,11 @@
 machine:
   services:
     - docker
-
 dependencies:
-  cache_directories:
-    - "~/docker"
-
-  override:
-    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
-    - docker build -t "ministryofjustice/12-factor-wordpress-demo" .
-    - mkdir -p ~/docker; docker save "ministryofjustice/12-factor-wordpress-demo" > ~/docker/image.tar
-    - docker history "ministryofjustice/12-factor-wordpress-demo"
-  pre:
-    - mysql -u ubuntu -e "create database wp_publishing_test"
 test:
+  pre:
+    - docker-compose build
+    - docker-compose up -d
+    - docker-compose run npm install
   override:
-    - ./circle_test.sh
+    - docker-compose run gulp
