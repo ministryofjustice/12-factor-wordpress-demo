@@ -5,8 +5,7 @@ dependencies:
   pre:
     - docker-compose build
     - docker-compose up -d
-    - docker-compose run npm install
   override:
 test:
   override:
-    - docker-compose run gulp
+    - docker-compose run test.sh
