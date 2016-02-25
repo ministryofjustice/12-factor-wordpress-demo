@@ -5,6 +5,7 @@ machine:
     version: 5.5.11
 dependencies:
   pre:
+    - sudo apt-get update; sudo apt-get install zziplib-bin
     - docker-compose build
     - docker-compose up -d
   override:
