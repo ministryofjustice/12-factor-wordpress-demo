@@ -11,4 +11,4 @@ dependencies:
   override:
 test:
   override:
-    - docker-compose run ./test.sh
+    - docker-compose run wordpress npm install && gulp
