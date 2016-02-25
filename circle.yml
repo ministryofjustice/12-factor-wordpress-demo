@@ -9,6 +9,9 @@ dependencies:
   override:
 test:
   pre:
+    - docker-compose build
     - docker-compose up -d
   override:
     - docker-compose run wordpress npm install -g && npm test
+  post:
+    - docker-compose stop
