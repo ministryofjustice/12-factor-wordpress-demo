@@ -13,6 +13,6 @@ test:
     - docker-compose up -d
     - sleep 10
   override:
-    - docker-compose run wordpress npm install -g && npm test
+    - docker-compose run wordpress npm cache clean && npm install && npm test
   post:
     - docker-compose stop
