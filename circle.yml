@@ -11,4 +11,4 @@ test:
   pre:
     - docker-compose up -d
   override:
-    - docker-compose run wordpress npm install && gulp
+    - docker-compose run wordpress npm install -g && npm test
