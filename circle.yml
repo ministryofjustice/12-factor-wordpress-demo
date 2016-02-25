@@ -6,9 +6,9 @@ machine:
 dependencies:
   pre:
     - sudo apt-get update; sudo apt-get install zziplib-bin
-    - docker-compose build
-    - docker-compose up -d
   override:
 test:
+  pre:
+    - docker-compose up -d
   override:
     - docker-compose run wordpress npm install && gulp
