@@ -1,12 +1,11 @@
-var request = require('request');
+var request = require('superagent');
 var url = 'http://localhost';
 var expect = require('chai').expect;
 
 describe('Homepage', function () {
     it('should get root ok', function (done) {
-        request(url, function (error, response, body) {
-            expect(response.statusCode).to.equal(200);
-            // body.should.eql({ data: 'Some data'});
+        request.get(url).end(function(error, response){
+            expect(response.status).to.equal(200);
             done();
         });
     });
