@@ -10,4 +10,4 @@ dependencies:
   override:
 test:
   override:
-    - docker-compose run test.sh
+    - docker-compose run ./test.sh
