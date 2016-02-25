@@ -2,10 +2,11 @@ machine:
   services:
     - docker
 dependencies:
-test:
   pre:
     - docker-compose build
     - docker-compose up -d
     - docker-compose run npm install
+  override:
+test:
   override:
     - docker-compose run gulp
