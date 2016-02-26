@@ -7,7 +7,7 @@
 ##
 
 # Apply IP whitelist site-wide
-echo "include /etc/nginx/whitelist.conf;" > /etc/nginx/whitelist-frontend.conf
+# echo "include /etc/nginx/whitelist.conf;" > /etc/nginx/whitelist-frontend.conf
 
 # Install PHP dependencies (WordPress, plugins, etc.)
 composer install
