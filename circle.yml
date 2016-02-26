@@ -3,6 +3,8 @@ machine:
     - docker
   php:
     version: 5.5.11
+  node:
+    version: 5.1.0
 dependencies:
   pre:
     - sudo apt-get update; sudo apt-get install zziplib-bin
