@@ -6,6 +6,9 @@
 # and perform any other build-time tasks.
 ##
 
+# Apply IP whitelist site-wide
+echo "include /etc/nginx/whitelist.conf;" > /etc/nginx/whitelist-frontend.conf
+
 # Install PHP dependencies (WordPress, plugins, etc.)
 composer install
 
