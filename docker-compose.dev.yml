@@ -5,6 +5,7 @@ wordpress:
   volumes:
     - .:/wordpress
   env_file: .env
+  privileged: true
   environment:
     URL: ${WP_HOME}
     DB_USER: ${DB_USER}
