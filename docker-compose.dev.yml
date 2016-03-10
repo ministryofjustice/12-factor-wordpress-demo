@@ -29,9 +29,11 @@ wordpress:
     DISABLE_WP_CRON: true
     SERVER_NAME: ${SERVER_NAME}
     WHITELIST_IPS: ${WHITELIST_IPS}
-    SMTP_HOST: ${SMTP_HOST}
-    SMTP_PORT: ${SMTP_PORT}
-    SMTP_USER: ${SMTP_USER}
-    SMTP_PASS: ${SMTP_PASS}
-    SMTP_USE_STARTTLS: ${SMTP_USE_STARTTLS}
-    SMTP_USE_SSL: ${SMTP_USE_SSL}
+    SMTP_HOST: mailcatcher
+    SMTP_PORT: 1025
+    link:
+      - mailcatcher
+mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - 1080:1080
