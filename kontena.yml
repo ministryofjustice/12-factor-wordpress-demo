@@ -19,9 +19,6 @@ wordpress2:
     - secret: TEST_SERVER_NAME
       name: SERVER_NAME
       type: env
-    - secret: TEST_URL
-      name: URL
-      type: env
     - secret: TEST_DB_USER
       name: DB_USER
       type: env
